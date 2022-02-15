@@ -16,6 +16,7 @@ const NavArepa = () => {
   window.addEventListener("scroll", changeNavbarColor);
 
   return (
+
     <nav className={navColorScroll ? "o-nav-arepa scrolled" : "o-nav-arepa"}>
       <div className="o-nav-right">
         <a href="">Acerca</a>
@@ -29,6 +30,7 @@ const NavArepa = () => {
         <a href="">Otra</a>
       </div>
     </nav>
+
   );
 };
 

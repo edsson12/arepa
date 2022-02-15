@@ -1,18 +1,19 @@
 .o-nav-arepa {
   width: 100%;
   height: 6rem;
-  background-color: #f9ae1900;
+  background-color: #090a0a81;
   display: flex;
   justify-content: space-around;
   align-items: center;
   position: sticky;
   top: 0;
   z-index: 2;
-  box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;
+ 
   transition: all ease 0.2s;
   overflow: hidden;
 
   .o-nav-right {
+      
     width: 40%;
     display: flex;
     align-items: center;
@@ -21,11 +22,11 @@
 
     a {
       text-decoration: none;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Gloria Hallelujah', cursive;
       color: #f9ae19;
 
       &:hover{
-          color: #090a0a;
+          color: white;
       }
     }
   }
@@ -42,10 +43,10 @@
     justify-content: space-around;
     a {
       text-decoration: none;
-      font-family: 'Oswald', sans-serif;
+      font-family: 'Gloria Hallelujah', cursive;
       color: #f9ae19;
       &:hover{
-        color: #090a0a;
+        color: white;
     }
     }
   }
@@ -69,6 +70,9 @@
     width: 40%;
     a{
         color: white;
+        &:hover{
+            color: #090a0a81;
+        }
     }
     
   }
@@ -81,6 +85,9 @@
     width: 40%;
     a{
         color: white;
+        &:hover{
+            color: #090a0a81;
+        }
     }
     
   }
