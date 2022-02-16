@@ -19,7 +19,10 @@ const NavArepa = () => {
 
   return (
     <nav className={navColorScroll ? "o-nav-arepa scrolled" : "o-nav-arepa"}>
+      <div className="o-img-nav-container">
       <img src={imgNav} alt="Arepa e huevo logo png" />
+      </div>
+      
       <div className="o-nav-right">
         <a href="">¿Quiénes somos</a>
         <a href="">Menú</a>
@@ -27,10 +30,11 @@ const NavArepa = () => {
       </div>
 
       <div className="o-nav-left">
+        <div className="o-logo-container">
      
-     <ImFacebook></ImFacebook>
-     <BsInstagram></BsInstagram>
-     
+     <ImFacebook color={navColorScroll ? 'white': '#090a0a' }></ImFacebook>
+     <BsInstagram color={navColorScroll ? 'white': '#090a0a'}></BsInstagram>
+     </div>
       </div>
     </nav>
   );

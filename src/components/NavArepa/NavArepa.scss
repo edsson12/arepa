@@ -1,10 +1,11 @@
 @use "../../globalStyles/globalStyles";
+
 .o-nav-arepa {
   width: 100%;
   height: 6rem;
   background-color: white;
   display: flex;
-  
+
   align-items: center;
   position: sticky;
   top: 0;
@@ -30,28 +31,38 @@
       }
     }
   }
-
+.o-img-nav-container{
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   img {
-    width: 7%;
+    width:30%;
   }
+}
+  
 
-
-  .o-nav-left{
+  .o-nav-left {
     display: flex;
     align-items: center;
-    justify-content:flex-end;
-width: 40%;
+    justify-content: flex-end;
+    
+    width: 40%;
+    .o-logo-container{
+      width: 15%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+    }
   }
 }
 
 .o-nav-arepa.scrolled {
-  
-  
   width: 100%;
   height: 4rem;
-  background-color: #f9ae19;
+  background-color: globalStyles.$secundaryColor;
   display: flex;
-  
+
   align-items: center;
   position: sticky;
   top: 0;
@@ -65,22 +76,26 @@ width: 40%;
     a {
       color: white;
       &:hover {
-        color: #090a0a81;
+        color: globalStyles.$secundaryColor;
       }
     }
   }
 
-  img {
-    width: 7%;
+  .o-img-nav-container{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+      width:30%;
+    }
   }
-
-
-  .o-nav-left{
-width: 40%;
-display: flex;
-align-items: center;
-justify-content:flex-end;
-width: 40%;
+  .o-nav-left {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40%;
   }
 }
 

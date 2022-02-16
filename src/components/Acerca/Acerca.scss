@@ -8,41 +8,43 @@
   align-items: center;
   flex-direction: row;
   height: 32rem;
-  background-color: #090a0a;
+  background-color: white;
 
   .o-right {
     width: 50%;
     height: 100%;
-    background-color: blue;
+    
     display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
 
     
     
 
-    .o-img-container {
+    .o-txt-container {
       width:50%;
       height: 50%;
       display: flex;
-      align-items: flex-end;
+      align-items: flex-start;
       justify-content: center;
       flex-direction: column;
-      border: 1px solid black;
+ 
+      
       
 
       h1 {
-        color: white;
+        color: globalStyles.$mainColor;
         font-family: "Roboto", sans-serif;
         font-weight: 900;
-        text-align: right;
+        text-align: left;
+        
       }
       h2 {
-        color: white;
+        color: globalStyles.$secundaryColor;
         font-family: "Roboto", sans-serif;
-        font-weight: 100;
-        text-align: right;
+        font-weight: 600;
+        text-align: left;
       }
 
       button {
@@ -66,12 +68,16 @@
         }
       }
     }
+
+    .space{
+      width: 40%;
+    }
   }
 
   .o-left {
     width: 50%;
     height: 100%;
-    background-color: red;
+
     
   }
 }
