@@ -24,7 +24,7 @@ const NavArepa = () => {
       </div>
       
       <div className="o-nav-right">
-        <a href="">¿Quiénes somos</a>
+        <a href="">Nosotros</a>
         <a href="">Menú</a>
         <a href="">Contacto</a>
       </div>
