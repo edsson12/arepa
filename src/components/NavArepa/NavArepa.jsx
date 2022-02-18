@@ -42,12 +42,12 @@ const NavArepa = ({ menuOpen, setMenuOpen }) => {
 
         <div className="o-nav-left">
           <div className="o-logo-container">
-            <ImFacebook
+            <a href="#"><ImFacebook
               color={navColorScroll ? "white" : "#090a0a"}
-            ></ImFacebook> 
-            <BsInstagram
+            ></ImFacebook> </a>
+            <a href=""> <BsInstagram
               color={navColorScroll ? "white" : "#090a0a"}
-            ></BsInstagram>
+            ></BsInstagram></a>
 
           </div>
           

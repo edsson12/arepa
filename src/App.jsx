@@ -3,6 +3,7 @@ import Acerca from './components/Acerca/Acerca'
 import Menu from './components/Menu/Menu'
 
 import NavArepa from './components/NavArepa/NavArepa'
+import Tarjeta from './components/Tarjeta/Tarjeta'
 
 
 const App = () => {
@@ -22,6 +23,8 @@ const App = () => {
     menuOpen={menuOpen}
     />
     <Acerca/>
+
+    <Tarjeta/>
 
     
 

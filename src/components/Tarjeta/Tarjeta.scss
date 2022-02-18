@@ -1,0 +1,53 @@
+@use "../../globalStyles/globalStyles";
+
+$width: 425px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+
+.o-tarjeta-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  flex-direction: column;
+  overflow: hidden;
+  border-radius: 1rem;
+  
+  .o-img-card-cont {
+      width: 100%;
+      height: 20rem;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+
+      
+    img {
+      width: 100%;
+    
+    }
+  }
+
+  .o-card-text-cont {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 1rem;
+    }
+    p {
+      font-size: 1rem;
+      text-align: justify;
+      padding: 1rem 1rem;
+    }
+  }
+}

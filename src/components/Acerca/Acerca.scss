@@ -1,5 +1,13 @@
 @use "../../globalStyles/globalStyles";
 
+$width: 425px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+
 .o-acerca-container {
   width: 100%;
   overflow: hidden;
@@ -10,68 +18,95 @@
   height: 32rem;
   background-color: white;
 
+  @include mobile {
+    flex-direction: column;
+  }
+
   .o-right {
     width: 50%;
-    height: 100%;    
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     flex-direction: row;
 
     .o-txt-container {
-      width:50%;
+      width: 50%;
       height: 50%;
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      flex-direction: column;      
+      flex-direction: column;
+      @include mobile{
+        height: 30%;
+        position: absolute;
+        align-items: center;
+        }
+      
 
       h1 {
-        margin:  0;
+        margin: 0;
         color: globalStyles.$mainColor;
-        font-family: 'Bowlby One SC', cursive;        
+        font-family: "Bowlby One SC", cursive;
         font-weight: 900;
         text-align: left;
-        
+        @include mobile{
+        font-size: 1rem;
+        }
       }
       h2 {
         color: globalStyles.$secundaryColor;
-        font-family: 'Roboto', sans-serif;
+        font-family: "Roboto", sans-serif;
         font-weight: 300;
         text-align: justify;
+        @include mobile{
+          display: none;
+          }
       }
 
       button {
-         /* Green */
-         background-color: white;
+        /* Green */
+        background-color: white;
         color: globalStyles.$mainColor;
         padding: 1rem 2rem;
         text-align: center;
-        text-decoration: none;        
+        text-decoration: none;
         font-size: 1.5rem;
         transition-duration: 0.4s;
         border-radius: 0.5rem;
         cursor: pointer;
         font-weight: 700;
         border: 0.2rem solid globalStyles.$mainColor;
-        font-family: 'Amatic SC', cursive;
+        font-family: "Amatic SC", cursive;
 
         &:hover {
-          
           background-color: globalStyles.$mainColor;
-          color: white
-          
+          color: white;
         }
       }
     }
 
-    .space{
+    .space {
       width: 40%;
     }
   }
 
   .o-left {
     width: 50%;
-    height: 100%;    
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    overflow: hidden;
+    @include mobile{
+      width: 100%;
+      position: relative;
+    }
+
+    img {
+      width: 100%;
+      
+     
+    }
   }
 }

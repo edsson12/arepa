@@ -1,4 +1,12 @@
 @use "../../globalStyles/globalStyles";
+
+$width: 425px;
+
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
 .menu{
     width: 300px;
     height: 100vh;
@@ -12,6 +20,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    @include mobile{
+        z-index: 1;
+    }
 
     &.active{
         right: 0;

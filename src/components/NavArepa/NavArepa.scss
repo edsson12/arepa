@@ -76,6 +76,7 @@ $width: 425px;
       @include mobile{
         display: none;
       }
+      
     }
 
     .hamburger {
@@ -118,7 +119,7 @@ $width: 425px;
   position: sticky;
   top: 0;
   z-index: 2;
-  /*box-shadow: rgba(33, 35, 38, 0.3) 0px 10px 10px -10px;*/
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
   transition: all ease 0.5s;
   overflow: hidden;
 
