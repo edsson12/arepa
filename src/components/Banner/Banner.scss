@@ -1,0 +1,27 @@
+@use "../../globalStyles/globalStyles";
+$width: 425px;
+@mixin mobile {
+  @media (max-width:#{$width}) {
+    @content;
+  }
+}
+
+.o-banner{
+    height: 16rem;
+    width: 100%;
+   background-image: url("https://st2.depositphotos.com/3283585/12247/v/950/depositphotos_122478664-stock-illustration-pattern-on-the-theme-of.jpg");
+   background-size: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1{
+        margin: 0;
+        color: white;
+        font-family: globalStyles.$fuente;
+        background-color: globalStyles.$mainColor;
+        padding: 0 1rem 0 1rem;
+        border-radius: 0.5rem;
+        font-size: 4rem;
+    }
+}

@@ -16,6 +16,7 @@ $width: 425px;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
+    background-color: globalStyles.$mainColor;
     
 
 
@@ -25,12 +26,12 @@ $width: 425px;
     align-items: center;
     justify-content: center;
     width: 22rem;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
-      rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
     flex-direction: column;
     overflow: hidden;
     border-radius: 1rem;
     margin: 0 2rem 0 2rem;
+    background-color: white;
 
     .o-img-card-cont {
       width: 100%;
