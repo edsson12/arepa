@@ -1,22 +1,33 @@
-import React from "react";
-import "./Tarjeta.scss";
-import imgCard from "../../img/banner4.jpeg";
+import "./Tarjeta.scss";/*
+import imgCard from "../../img/banner4.jpeg";*/
+import { tarjetasHuevo } from "../../data";
 
 const Tarjeta = () => {
-  return (
-    <div className="o-tarjeta-container">
-      <div className="o-img-card-cont">
-        <img src={imgCard} alt="arepa huevo" />
-      </div>
 
-      <div className="o-card-text-cont">
-        <h2>Arepa e´ huevo chorizuda</h2>
+const data = tarjetasHuevo;
+
+  return (
+   
+    <div className="o-tarjetas">
+     {data.map((d)=>(
+       
+
+      <div className="o-tarjeta-container">
+      <div className="o-img-card-cont">
+        <img src={d.img} alt="arepa huevo" />
+      </div>
+        <div className="o-card-text-cont">
+        <h2>{d.title}</h2>
         <p>
-          La mas rica arepa e´ huevo rellena de chorizo, hechas con arina de
-          maiz y preparadas con la mejor calidad.
+          {d.desc}
         </p>
       </div>
-    </div>
+
+      </div>
+      
+     ))}
+     </div>
+
   );
 };
 

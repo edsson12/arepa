@@ -6,6 +6,9 @@ import NavArepa from './components/NavArepa/NavArepa'
 import Tarjeta from './components/Tarjeta/Tarjeta'
 
 
+/*AGREGAR REACT CAROUSEL CON MUI CAROUSEL, FALTA INSTALARLO E IMPLEMENTARLO EN LAS TARJETAS*/
+
+
 const App = () => {
 
   const [menuOpen, setMenuOpen] = useState(false)
@@ -25,6 +28,7 @@ const App = () => {
     <Acerca/>
 
     <Tarjeta/>
+   
 
     
 

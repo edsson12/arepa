@@ -1,11 +1,11 @@
 import React from "react";
-import "./Acerca.scss";
-import imgBanner from '../../img/banner4.jpeg'
+import "./Acerca.scss";/*
+import imgBanner from '../../img/banner4.jpeg'*/
 const Acerca = () => {
   return (
     <div className="o-acerca-container">
       <div className="o-left">
-          <img src={imgBanner} alt="arepa de huevo" />
+          <img src='assets/banner4.jpeg' alt="arepa de huevo" />
 
       </div>
 

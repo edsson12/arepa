@@ -4,14 +4,9 @@ import { ImFacebook } from "react-icons/im";
 import { BsInstagram } from "react-icons/bs";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { ImCross } from "react-icons/im";
-
-
-
-
-
-
 import "./NavArepa.scss";
-import imgNav from "../../img/ArepaehuevoLOGO.png";
+/*
+import imgNav from "../../img/ArepaehuevoLOGO.png";*/
 
 const NavArepa = ({ menuOpen, setMenuOpen }) => {
 
@@ -19,7 +14,7 @@ const NavArepa = ({ menuOpen, setMenuOpen }) => {
   const [navColorScroll, setNavColorScroll] = useState(false);
 
   const changeNavbarColor = () => {
-    if (window.scrollY >= 80) {
+    if (window.scrollY > 80) {
       setNavColorScroll(true);
     } else {
       setNavColorScroll(false);
@@ -31,7 +26,7 @@ const NavArepa = ({ menuOpen, setMenuOpen }) => {
     <>
       <nav className={navColorScroll ? "o-nav-arepa scrolled" : "o-nav-arepa"}>
         <div className="o-img-nav-container">
-          <img src={imgNav} alt="Arepa e huevo logo png" />
+          <img src='assets/ArepaehuevoLOGO.png'alt="Arepa e huevo logo png" />
         </div>
 
         <div className="o-nav-right">
